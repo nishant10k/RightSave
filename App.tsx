@@ -30,7 +30,7 @@ const App = () => {
       gainLoss: string;
       img: string;
     }[]
-  >([]);
+  >(fundjson);
   try {
     fetch('https://anapioficeandfire.com/api/houses/1').then(res => {
       if (res.status === 200) setIsLoading(false);
